@@ -20,6 +20,11 @@
     
 }
 
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
 .container {
 
     width: 1200px;
@@ -30,7 +35,8 @@
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    width:1600px;
+    width: 1600px;
+    min-width: 100%;
 }
 /* Body global*/
 .entire-content {
@@ -41,7 +47,7 @@ background-color: var(--white);
 }
 
 body {
-    max-width: 100%;
+   max-width: 100%;
     margin: 0 auto;
 }
 
@@ -49,6 +55,8 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0; 
 }
+
+
 
 ul {
     margin: 0;
@@ -77,7 +85,7 @@ width: 1600px;
     font-weight: 700;
     letter-spacing: 0.78px;
     line-height: 1.2;
-    margin-left: 215px;
+  
 
   
 }
@@ -114,17 +122,7 @@ width: 1600px;
     margin-right: 40px;
 }
 
-.envelope:hover,
-.smartphone:hover {
-    stroke: var(--blue);
-    cursor: pointer;
-}
 
-.envelope:focus,
-.smartphone:focus {
-    stroke: var(--blue);
-    cursor: pointer;
-}
 
 /* Link style */
 a {
@@ -133,9 +131,17 @@ a {
 }
 .link:hover {
     color: var(--blue);
+    stroke: var(--blue);
+        cursor: pointer;
 }
 .link:focus {
-    color: var(--blue)
+    color: var(--blue);
+    stroke: var(--blue);
+        cursor: pointer;
+}
+
+.envelope, .smartphone {
+    margin-right: 10px;
 }
 
 /*Title section*/
