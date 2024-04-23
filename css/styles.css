@@ -114,18 +114,24 @@ width: 1600px;
     margin-right: 40px;
 }
 
-.envelope:hover,
-.smartphone:hover {
+
+
+
+.link:focus {
+    color: var(--blue);
     stroke: var(--blue);
     cursor: pointer;
 }
 
-.envelope:focus,
-.smartphone:focus {
+.link:hover {
+    color: var(--blue);
     stroke: var(--blue);
     cursor: pointer;
 }
-
+.envelope,
+.smartphone {
+    margin-right: 10px;
+}
 /* Link style */
 a {
     text-decoration: none;
